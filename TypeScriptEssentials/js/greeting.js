@@ -1,0 +1,1 @@
+function greeter(e){return"Hello "+e}function greetPerson(e){return"Hello, "+e.firstName+" "+e.lastName}var pers="James Bond",person={firstName:"Jonny",lastName:"Bravo"};document.body.innerHTML=greetPerson(person);
