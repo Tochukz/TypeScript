@@ -22,6 +22,10 @@ You can also explicitly specify the name of your output file by using the `outFi
 ```
 > tsc main.ts --outFile app.js
 ```
+You can also specify the ECMAScript target  
+```
+> tsc main.ts --outFile app.js -t ES6
+```
 
 ## Chapter 1: TypeScript Language Features  
 __Variables__  
@@ -35,3 +39,8 @@ Tuples are names after the number of items they define: Pair, Triple Quadruple, 
 
 __Mapped Types__  
 Mapped type can be used to create readonly, optional or nullable variation of an existing type.  
+
+__Type Information__   
+Obtaining types at runtime is a topic to be treated with some care.  If your program tests types to control the flow of the program, you should be hearing alarm bells in your head. Checking types and branching off in different directions based on the types is a strong indicator that you have broken encapsulation.  
+
+## Chapter 2 Code Organization 
